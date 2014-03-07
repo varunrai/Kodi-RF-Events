@@ -1,4 +1,5 @@
 ISY Events Engine
+service.script.isyevents
 
 DESCRIPTION:
 ISY Events Engine is part of the ISY Events add-on set. The ISY Events Engine allows actions to be performed when events occur on the XBMC machine.

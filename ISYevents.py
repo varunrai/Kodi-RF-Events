@@ -37,16 +37,16 @@ usehttps = isy_browse.getSetting('usehttps') == 'true'
 isy = pyisy.open(username, password, host, port, usehttps)
 # verify isy opened correctly
 if isy.__dummy__:
-    header = log.translator(35001)
-    message = log.translator(35002)
+    header = log.translator(32501)
+    message = log.translator(32502)
     xbmc.executebuiltin('Notification(' + header + ',' + message + ', 15000)')
 
 # check last version run
 last_ver = isy_events.getSetting('last_run_ver')
 if last_ver != __version__:
-    header = log.translator(36000)
-    message = [log.translator(36001), log.translator(36002),
-               log.translator(36003)]
+    header = log.translator(32600)
+    message = [log.translator(32601), log.translator(32602),
+               log.translator(32603)]
     xbmcgui.Dialog().ok(header, message[0], message[1], message[2])
     isy_events.setSetting('last_run_ver', __version__)
 

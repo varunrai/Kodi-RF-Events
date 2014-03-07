@@ -7,4 +7,4 @@ translator = self.getLocalizedString
 
 # function to record messages to log
 def log(msg):
-    print translator(33001) + msg
+    print translator(32301) + msg
