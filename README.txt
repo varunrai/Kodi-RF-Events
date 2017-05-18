@@ -1,15 +1,10 @@
-ISY Events Engine
-service.script.isyevents
+Kodi Events Engine
+service.script.rfevents
 
 DESCRIPTION:
-ISY Events Engine is part of the ISY Events add-on set. The ISY Events Engine allows actions to be performed when events occur on the XBMC machine.
+RF Events Engine is part of the Kodi RF Events add-on set. The RF Events Engine allows actions to be performed using RF Transceiver when events occur on the Kodi machine.
 
-This add-on requires the ISY Browser add-on. This can be found here:
-https://github.com/automicus/XBMC-ISY-Browser
+The current code is to allow the interaction of LED Lights in the room with RF Driver (Receiver). The events such as Playback, Pause, Resume, Stop will trigger the lights to dim or full brightness.
 
-For more information, please see the Automicus website.
-
-AUTHOR: Automicus (Ryan Kraus)
-DATE: 2/2014
-EMAIL: automicus@gmail.com
-WEBSITE: http://automic.us
+AUTHOR: Varun
+DATE: 18/5/2017
