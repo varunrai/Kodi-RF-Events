@@ -1,8 +1,8 @@
 # CONSTANTS
-__author__ = 'Automicus'
-__version__ = '1.0.1'
-__url__ = 'http://automic.us'
-__date__ = '2/2014'
+__author__ = 'Varun'
+__version__ = '0.0.1'
+__url__ = 'https://github.com/varunrai/Kodi-RF-Events'
+__date__ = '17/05/2017'
 
 # imports
 import sys
@@ -11,8 +11,7 @@ import xbmcaddon
 import xbmcgui
 
 # fetch addon information
-isy_events = xbmcaddon.Addon('service.script.isyevents')
-isy_browse = xbmcaddon.Addon('plugin.program.isybrowse')
+isy_events = xbmcaddon.Addon('service.script.rfevents')
 
 # add libraries to path
 library_path = isy_events.getAddonInfo('path') + '/resources/Lib/'
@@ -21,22 +20,22 @@ library_path = isy_browse.getAddonInfo('path') + '/resources/lib/'
 sys.path.append(library_path)
 
 # custom imports
-import pyisy
+#import pyisy
 import xb_events
 import log
 import event_actions
 
 # load settings
-username = isy_browse.getSetting('username')
-password = isy_browse.getSetting('password')
-host = isy_browse.getSetting('host')
-port = int(isy_browse.getSetting('port'))
-usehttps = isy_browse.getSetting('usehttps') == 'true'
+#username = isy_browse.getSetting('username')
+#password = isy_browse.getSetting('password')
+#host = isy_browse.getSetting('host')
+#port = int(isy_browse.getSetting('port'))
+#usehttps = isy_browse.getSetting('usehttps') == 'true'
 
 # open isy connection
-isy = pyisy.open(username, password, host, port, usehttps)
+#isy = pyisy.open(username, password, host, port, usehttps)
 # verify isy opened correctly
-if isy.__dummy__:
+#if isy.__dummy__:
     header = log.translator(32501)
     message = log.translator(32502)
     xbmc.executebuiltin('Notification(' + header + ',' + message + ', 15000)')
